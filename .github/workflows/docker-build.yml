@@ -36,6 +36,7 @@ jobs:
         env:
           GOOS: linux
           GOARCH: amd64
+          CGO_ENABLED: 0
         run: |
           mkdir -p build
           go build -o build/mwp.linux.amd64 ./api/cmd
